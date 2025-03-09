@@ -2,7 +2,8 @@
 let date=new Date(); 
 var currentdate=new Date().toLocaleDateString();
 var time=new Date().toLocaleTimeString();
-const prompts = [
+const prompts = 
+[
     ["hi", "hey", "hello", "good morning", "good afternoon"],
     ["how are you", "how is life", "how are things"],
     ["what are you doing", "what is going on", "what is up"],

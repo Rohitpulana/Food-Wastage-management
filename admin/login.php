@@ -12,7 +12,7 @@ if(isset($_POST['signup']))
     $password=$_POST['password'];
     $location=$_POST['district'];
 
-    $pass=password_hash($password,PASSWORD_DEFAULT);
+    $pass=password_hash ($password,PASSWORD_DEFAULT);
     $sql="select * from admin where email='$email'" ;
     $result= mysqli_query($connection, $sql);
     $num=mysqli_num_rows($result);
@@ -24,7 +24,7 @@ if(isset($_POST['signup']))
     }
     else{
     
-    $query="insert into admin(name,email,password,location) values('$username','$email','$pass','$location')";
+     $query="insert into admin(name,email,password,location) values('$username','$email','$pass','$location')";
     $query_run= mysqli_query($connection, $query);
     if($query_run)
     {

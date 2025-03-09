@@ -21,9 +21,14 @@ if($_SESSION['name']==''){
     <link rel="stylesheet" href="admin.css">
      
     <!----===== Iconscout CSS ===== -->
+    
+    
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Admin Dashboard Panel</title> 
+
+
+
     
 <?php
 //  $connection=mysqli_connect("localhost:3307","root","");
@@ -36,6 +41,8 @@ if($_SESSION['name']==''){
 <body>
     <nav>
         <div class="logo-name">
+
+        
             <div class="logo-image">
                 <!--<img src="images/logo.png" alt="">-->
             </div>

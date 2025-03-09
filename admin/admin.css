@@ -7,6 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 :root{
     /* ===== Colors ===== */
     --primary-color: #0E4BF1;
@@ -26,11 +28,11 @@
     --tran-03: all 0.2s ease;
 }
 
-body{
+body  {
     min-height: 100vh;
     background-color: var(--primary-color);
 }
-body.dark{
+body.dark  {
     --primary-color: #3A3B3C;
     --panel-color: #242526;
     --text-color: #CCC;
@@ -62,10 +64,12 @@ body.dark{
 body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover{
     background: #3A3B3C;
+
 }
 
 nav{
     position: fixed;
+    
     top: 0;
     left: 0;
     height: 100%;

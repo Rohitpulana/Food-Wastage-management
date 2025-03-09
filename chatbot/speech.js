@@ -10,4 +10,5 @@ const textToSpeech = (string) => {
   voice.rate = 1;
   voice.pitch = 1; // Can be 0, 1, or 2
   synth.speak(voice);
+  
 }

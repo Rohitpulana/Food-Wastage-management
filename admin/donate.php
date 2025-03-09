@@ -33,6 +33,7 @@ if($_SESSION['name']==''){
 
 ?>
 </head>
+
 <body>
     <nav>
         <div class="logo-name">

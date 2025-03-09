@@ -4,12 +4,14 @@ if($_SESSION['name']==''){
 	header("location: signin.php");
 }
 // include("login.php"); 
+
 $emailid= $_SESSION['email'];
 $connection=mysqli_connect("localhost","root","");
 $db=mysqli_select_db($connection,'demo');
 if(isset($_POST['submit']))
 {
-    $foodname=mysqli_real_escape_string($connection, $_POST['foodname']);
+    
+  $foodname=mysqli_real_escape_string($connection, $_POST['foodname']);
     $meal=mysqli_real_escape_string($connection, $_POST['meal']);
     $category=$_POST['image-choice'];
     $quantity=mysqli_real_escape_string($connection, $_POST['quantity']);

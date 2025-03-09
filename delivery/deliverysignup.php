@@ -5,6 +5,7 @@
 include '../connection.php';
 $msg=0;
 if(isset($_POST['sign']))
+
 {
 
     $username=$_POST['username'];

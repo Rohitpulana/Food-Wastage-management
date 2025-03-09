@@ -4,7 +4,7 @@ session_start();
 // $db = mysqli_select_db($connection, 'demo');
 include '../connection.php'; 
 $msg=0;
-if (isset($_POST['sign'])) {
+if (isset($_POST['sign'])){
   $email = $_POST['email'];
   $password = $_POST['password'];
   $sanitized_emailid =  mysqli_real_escape_string($connection, $email);
@@ -15,7 +15,7 @@ if (isset($_POST['sign'])) {
   $result = mysqli_query($connection, $sql);
   $num = mysqli_num_rows($result);
  
-  if ($num == 1) {
+  if($num == 1) {
     while ($row = mysqli_fetch_assoc($result)) {
       if (password_verify($sanitized_password, $row['password'])) {
         $_SESSION['email'] = $email;
@@ -90,6 +90,7 @@ if (isset($_POST['sign'])) {
           <span></span>
           <label>Email</label>
         </div>
+        
         <div class="txt_field">
           <input type="password" name="password" required/>
           <span></span>
